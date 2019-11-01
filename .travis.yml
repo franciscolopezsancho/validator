@@ -1,14 +1,16 @@
-  only:
-    - master
+language: scala
 
-  cache:
-    directories:
-      - $HOME/.ivy2
-      - $HOME/.sbt
-      - $HOME/.m2/repository
+only:
+  - master
 
-    script:
-      - sbt
-        scalastyle
-        test:scalastyle
-        coverage test coverageReport coverageAggregate codacyCoverage
+cache:
+  directories:
+    - $HOME/.ivy2
+    - $HOME/.sbt
+    - $HOME/.m2/repository
+
+  script:
+    - sbt
+      scalastyle
+      test:scalastyle
+      coverage test coverageReport coverageAggregate codacyCoverage
