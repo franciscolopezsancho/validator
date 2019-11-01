@@ -20,4 +20,5 @@ To execute the travis build you may curl it with:
    -H "Travis-API-Version: 3" \
    -H "Authorization: token xxxxx" \
    -d "$body" \
-   https://api.travis-ci.com/repo/franciscolopezsancho%2Fvalidator/requests```
+   https://api.travis-ci.com/repo/franciscolopezsancho%2Fvalidator/requests
+```
